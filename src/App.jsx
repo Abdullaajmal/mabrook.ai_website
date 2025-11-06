@@ -24,13 +24,13 @@ const App = () => {
       </div>
 
       {/* Main content */}
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-20">
+      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-20 main-content">
         {/* Mabrook Logo */}
         <div className="mb-8">
           <img 
             src={mabrook} 
             alt="Mabrook" 
-            className="w-auto h-auto max-w-[500px] object-contain"
+            className="w-auto h-auto max-w-[500px] object-contain mabrook-logo"
           />
         </div>
 
@@ -40,12 +40,12 @@ const App = () => {
         </h1>
 
         {/* Call to Action Text */}
-        <p className="orbitron-paragraph text-white w-full max-w-[1300px] mb-12 px-4 mx-auto block">
+        <p className="orbitron-paragraph text-white w-full max-w-[1300px] mb-12 px-4 mx-auto block text-center">
           JOIN THE JOURNEY - REGISTER YOUR EMAIL NOW TO RECEIVE<br />YOUR EXCLUSIVE INVITE.
         </p>
 
         {/* Register Button */}
-        <button className="orbitron-text bg-gradient-to-r from-[#FF5D02] to-[#FF6802] text-white px-16 py-3 rounded-full text-base md:text-lg uppercase font-semibold tracking-wide shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+        <button className="orbitron-text bg-gradient-to-r from-[#FF5D02] to-[#FF6802] text-white px-16 py-3 rounded-full text-base md:text-lg uppercase font-semibold tracking-wide shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 register-btn">
           REGISTER
         </button>
       </div>
