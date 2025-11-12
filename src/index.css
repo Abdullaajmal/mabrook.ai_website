@@ -1,9 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 
 .orbitron-text {
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+}
+
+.intel-font {
+  font-family: "Inter", sans-serif;
 }
 
 .orbitron-paragraph {
@@ -51,5 +56,81 @@
   .main-content h1 {
     font-size: 24px !important;
     margin-bottom: 16px !important;
+  }
+}
+
+/* HomePage Responsive Styles */
+@media (max-width: 768px) {
+  /* Navigation */
+  nav {
+    padding: 16px 20px !important;
+  }
+
+  /* Hero Section - Mobile Centered Layout */
+  .min-h-\[60vh\] {
+    min-height: 60vh !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  /* Hero Text - Mobile */
+  .text-center h1 {
+    margin-bottom: 24px !important;
+  }
+
+  .text-center h1 span:first-child {
+    font-size: 28px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .text-center h1 span:last-child {
+    font-size: 36px !important;
+    line-height: 1.2 !important;
+  }
+
+  .text-center p {
+    font-size: 14px !important;
+    margin-bottom: 32px !important;
+    max-width: 100% !important;
+  }
+
+  /* Button - Mobile Full Width */
+  button.w-full {
+    width: 100% !important;
+    padding: 16px 24px !important;
+    font-size: 16px !important;
+    border-radius: 12px !important;
+  }
+}
+
+/* Minishop Section Responsive Styles */
+@media (max-width: 768px) {
+  /* Cards - already using flex layout, no rotation needed */
+}
+
+/* Footer Mobile Responsive Styles */
+@media (max-width: 768px) {
+  footer {
+    padding: 24px 20px !important;
+  }
+
+  /* Navigation links - single column on mobile */
+  footer .grid.grid-cols-1 {
+    gap: 24px !important;
+  }
+
+  /* Email subscription - full width on mobile */
+  footer form {
+    max-width: 100% !important;
+  }
+
+  /* Social icons and app badges - proper spacing */
+  footer .flex.flex-col {
+    gap: 16px !important;
+  }
+
+  /* Copyright section - stacked on mobile */
+  footer .flex.flex-col.items-start {
+    gap: 12px !important;
   }
 }
